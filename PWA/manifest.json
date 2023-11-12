@@ -1,0 +1,12 @@
+{
+  "name": "PWA Name App",
+  "short_name": "PWANameApp",
+  "description": "Esta sería la descripción de mi PWA",
+  "background_color": "#2B2B2B",
+  "theme_color": "#2196F3",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "index.html",
+  "scope": "./",
+  "lang": "es-MX"
+}
