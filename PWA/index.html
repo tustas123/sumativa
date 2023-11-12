@@ -22,20 +22,31 @@
 </head>
 
 <body>
-<header class="Header">
-    <h1>Bienvenido a Mi Página</h1>
-</header>
+    <div id="splash">
+        <h1>Cargando...</h1>
+    </div>
 
-<nav>
-    <a href="#">Inicio</a>
-    <a href="#">Acerca de</a>
-    <a href="#">Contacto</a>
-</nav>
+    <header>
+        <h1>Bienvenido a Mi Página</h1>
+    </header>
 
-<section>
-    <p>¡Hola! Gracias por visitar mi página de bienvenida. Espero que encuentres la información que buscas y disfrutes de tu tiempo aquí.</p>
-    <p>No dudes en explorar y ponerte en contacto si tienes alguna pregunta.</p>
-</section>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <section>
+        <p>¡Hola! Gracias por visitar mi página de bienvenida. Espero que encuentres la información que buscas y disfrutes de tu tiempo aquí.</p>
+        <p>No dudes en explorar y ponerte en contacto si tienes alguna pregunta.</p>
+    </section>
+
+    <script>
+        // Simula un tiempo de carga (en milisegundos)
+        setTimeout(function(){
+            document.getElementById('splash').style.display = 'none';
+        }, 2000); // Cambia esto al tiempo que desees
+    </script>
 </body>
 
 </html>
