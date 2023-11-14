@@ -1,0 +1,12 @@
+{
+  "name": "PWA_Sumativa_Web",
+  "short_name": "PWASumativa",
+  "description": "Resultado de aprendizaje - Desarrollo de una PWA por Alan Aarón Cruz De la Rosa",
+  "background_color": "#2B2B2B",
+  "theme_color": "#2196F3",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "index.html",
+  "scope": "./",
+  "lang": "es-MX"
+}

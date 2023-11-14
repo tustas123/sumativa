@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PWA Name App</title>
+  <meta name="description" content="PEA_Para_sumativa">
+
+  <meta name="theme-color" content="#2196F3">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="splash">
+        <h1>Cargando...</h1>
+    </div>
+
+    <header>
+        <h1>Bienvenido a Mi Página</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <section>
+        <p>¡Hola! Gracias por visitar mi página de bienvenida. Espero que encuentres la información que buscas y disfrutes de tu tiempo aquí.</p>
+        <p>No dudes en explorar y ponerte en contacto si tienes alguna pregunta.</p>
+    </section>
+
+    <script>
+        // Simula un tiempo de carga (en milisegundos)
+        setTimeout(function(){
+            document.getElementById('splash').style.display = 'none';
+        }, 2000); // Cambia esto al tiempo que desees
+    </script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then((registration) => {
+          console.log('Service Worker registrado con éxito:', registration);
+        })
+        .catch((error) => {
+          console.log('Error al registrar el Service Worker:', error);
+        });
+    }
+  </script>
+  
+    
+</body>
+
+</html>
