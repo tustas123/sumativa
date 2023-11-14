@@ -6,18 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PWA Name App</title>
-  <meta name="description" content="Esta sería la descripción de mi PWA">
+  <meta name="description" content="PEA_Para_sumativa">
 
   <meta name="theme-color" content="#2196F3">
   <meta name="MobileOptimized" content="width">
   <meta name="HandheldFriendly" content="true">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="shortcut icon" type="image/png" href="img/mainlogo.png">
-  <link rel="apple-touch-icon" href="img/mainlogo.png">
-  <link rel="apple-touch-startup-image" href="img/mainlogo.png">
-  <link rel="manifest" href="./manifest.json">
-
+  
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -47,6 +44,20 @@
             document.getElementById('splash').style.display = 'none';
         }, 2000); // Cambia esto al tiempo que desees
     </script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then((registration) => {
+          console.log('Service Worker registrado con éxito:', registration);
+        })
+        .catch((error) => {
+          console.log('Error al registrar el Service Worker:', error);
+        });
+    }
+  </script>
+  
+    
 </body>
 
 </html>
